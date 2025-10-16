@@ -16,8 +16,9 @@ public class Cliente extends Pessoa{
 
     @Override
     public void imprimeInfo(){
-    	System.out.println(getNome());
-    	System.out.println(getCpf());
+    	System.out.print("Informações do Cliente: ");
+        System.out.print(getNome() + ", ");
+    	System.out.print(getCpf() + ", ");
     	System.out.println(isCartao_loja());
 	}
 

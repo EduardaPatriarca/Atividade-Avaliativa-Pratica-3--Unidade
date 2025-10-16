@@ -15,7 +15,7 @@ public class Funcionario extends Pessoa{
     }
 
     public void setCodigo(String codigo) {
-        if(!codigo.isBlank()){^
+        if(!codigo.isBlank()){
             this.codigo = codigo;
         }
     }
@@ -25,7 +25,7 @@ public class Funcionario extends Pessoa{
     }
 
     public void setData_nascimento(String data_nascimento) {
-        if(!data_nascimento.isBlank()){^
+        if(!data_nascimento.isBlank()){
             this.data_nascimento = data_nascimento;
         }
         
@@ -36,17 +36,18 @@ public class Funcionario extends Pessoa{
     }
 
     public void setData_inicio(String data_inicio) {
-        if(!data_inicio.isBlank()){^
+        if(!data_inicio.isBlank()){
             this.data_inicio = data_inicio;
         }
     }
 
     @Override
     public void imprimeInfo(){
-    	System.out.println(getNome());
-    	System.out.println(getCpf());
-    	System.out.println(getCodigo());
-        System.out.println(getData_nascimento());
+    	System.out.print("Informações do Funcionário: ");
+        System.out.print(getNome() + ", ");
+    	System.out.print(getCpf() + ", ");
+    	System.out.print(getCodigo() + ", ");
+        System.out.print(getData_nascimento() + ", ");
         System.out.println(getData_inicio());
 	}
 }

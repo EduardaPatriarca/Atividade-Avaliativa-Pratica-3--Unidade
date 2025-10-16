@@ -5,9 +5,9 @@ public class Batom{
     private String local_fabricacao;
     private String massa;
     private String ingredientes;
-    private float preco;
+    private double preco;
 
-    public Batom(String marca, String cor, String acabamento, String local_fabricacao, String massa, String ingredientes, float preco){
+    public Batom(String marca, String cor, String acabamento, String local_fabricacao, String massa, String ingredientes, double preco){
         this.marca = marca;
         this.cor = cor;
         this.acabamento = acabamento;
@@ -65,21 +65,22 @@ public class Batom{
         this.ingredientes = ingredientes;
     }
 
-    public float getPreco() {
+    public double getPreco() {
         return this.preco;
     }
 
-    public void setPreco(float preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
     public void imprimeInfo(){
-        System.out.println(getMarca());
-        System.out.println(getCor());
-        System.out.println(getAcabamento());
-        System.out.println(getLocal_fabricacao());
-        System.out.println(getMassa());
-        System.out.println(getIngredientes());
+        System.out.print("Informações do Batom: ");
+        System.out.print(getMarca() + ", ");
+        System.out.print(getCor() + ", ");
+        System.out.print(getAcabamento() + ", ");
+        System.out.print(getLocal_fabricacao() + ", ");
+        System.out.print(getMassa() + ", ");
+        System.out.print(getIngredientes() + ", ");
         System.out.println(getPreco());
     }
 }

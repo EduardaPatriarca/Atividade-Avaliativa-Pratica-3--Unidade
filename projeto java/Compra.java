@@ -34,8 +34,10 @@ public class Compra{
     }
 
     public void imprimeInfo(){
+        System.out.println("\n----Informações da Compra: ----\n");
         cliente.imprimeInfo();
         batom.imprimeInfo();
         funcionario.imprimeInfo();
+        System.out.println("\n---Fim da Compra---\n");
     }
 }
